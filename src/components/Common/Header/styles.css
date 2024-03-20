@@ -1,0 +1,120 @@
+:root {
+  --primary: #EEF5FF;
+  --secondary: #B4D4FF;
+  --tertiary: #86B6F6;
+  --quaternary: #176B87;
+  --color-quinary: #c0b1a0;
+  --blue: rgb(106, 131, 255);
+  --text:#012e3d;
+  --dark:#121212;
+}
+
+
+
+#header {
+  color: var(--quaternary);
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 3rem;
+
+  box-shadow: 0 0 10px var(--quaternary);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0px;
+  margin: 0px;
+  background: linear-gradient(
+    -45deg,
+    var(--primary),
+   var(--quaternary),
+    var(--secondary),
+    var(--blue)
+  );
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+}
+#header > h1 {
+  padding: 0px;
+  margin: 0px;
+  color:var(--text);
+}
+
+html {
+  background-color: var(--dark);
+}
+#header > p {
+  font-size: 30px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 500;
+}
+
+a {
+  color:var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+.links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+a:hover {
+  color: var(--primary);
+  transition: all 0.2s;
+}
+.mobile-drawer {
+  display: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+  .links {
+    display: none;
+  }
+  .mobile-drawer {
+    display: block;
+  }
+  .drawer-div {
+    background-color: var(--quaternary);
+    height: 100vh;
+
+    width: 40vw;
+    padding: .5rem;
+    font-size: 20px;
+  }
+  .link {
+    color: var(--text);
+  }
+  .ham {
+    color: var(--text);
+  }
+  .ham:hover {
+    color: var(--primary);
+    transition: all 0.2s;
+  }
+  .link:hover {
+    color: var(--primary);
+    transition: all 0.2s;
+  }
+}

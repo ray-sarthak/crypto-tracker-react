@@ -1,0 +1,47 @@
+.btn{
+    background-color: var(--quaternary);
+    color: whitesmoke;
+    padding: 0.7rem 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    min-width: 100px;
+    text-transform: capitalize;
+    text-align: center;
+   
+}
+
+.btn:hover{
+    border-color: var(--quaternary);
+    color: #fff;
+    box-shadow: 0 0 40px 40px var(--quaternary) inset, 0 0 0 0 var(--quaternary);
+    transition: all 200ms ease-in-out;
+    
+    &:hover {
+      box-shadow: 0 0 10px 0 var(--quaternary) inset, 0 0 10px 4px var(--quaternary);
+    }
+}
+
+.outlined-btn{
+    background-color: var(--dark);
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--quaternary);
+    border-radius: 3rem;
+    cursor: pointer;
+    width: 4.75rem;
+    min-width: 100px;
+    text-transform: capitalize;
+    text-align: center;
+   
+}
+
+.outlined-btn:hover{
+    border-color: var(--quaternary);
+    color: #fff;
+    box-shadow: 0 0 40px 40px var(--quaternary) inset, 0 0 0 0 var(--quaternary);
+    transition: all 200ms ease-in-out;
+    
+    &:hover {
+      box-shadow: 0 0 10px 0 var(--quaternary) inset, 0 0 10px 4px var(--quaternary);
+    }
+}
