@@ -1,0 +1,118 @@
+.grid-container{
+ height: 300px;
+    width: 300px;
+    background-color: #333333;
+    border: 2px solid #333333;
+   
+    color:var(--primary);
+    border-radius: 1.5rem;
+    margin: 1rem;
+   
+}
+.coin-logo{
+    height: 3.5rem;
+    width: 3.5rem;
+    margin-left: 1rem;
+}
+.info-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+.name-col{
+    display: flex;
+    flex-direction: column;
+
+}
+.coin-name
+{
+color:lightgray;
+text-transform: uppercase;
+font-size:1.2rem;
+font-weight: 600;
+margin: 0px;
+padding: 0px;
+}
+.coin-symbol{
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom:5px;
+padding: 0px;
+}
+.chip-flex{
+    display:flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    padding: 0px;
+ 
+  margin-top: 1.5rem;
+
+}
+.price-chip{
+    border:2px solid rgb(104, 255, 104);
+    border-radius: 2rem;
+    width: 5rem;
+    height: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(104, 255, 104);
+   margin-left: 1.25rem;    
+}
+.price-chip>p{
+   margin-top:0.5rem;
+}
+.price-chip:hover{
+
+    background-color:rgb(104, 255, 104) ;
+    color: white;
+   
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.icon-chip{
+    border:2px solid rgb(104, 255, 104);
+    border-radius: 2rem;
+    width: 3rem;
+    height: fit-content;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(104, 255, 104);
+    padding: 0.25rem;
+     
+}
+.icon-chip:hover{
+    background-color:rgb(104, 255, 104) ;
+    color: white;
+   
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.chip-red{
+    border:2px solid rgb(255, 49, 49);
+    color:rgb(255, 49, 49)
+}
+.chip-red:hover{
+    background-color:rgb(255, 49, 49) ;
+    color: white;
+   
+    font-size: 18px;
+    transition: all 0.3s;
+}
+.info-container{
+    margin-left: 1.31rem;
+}
+.total-volume,.market-cap{
+color: rgb(87, 87, 87);
+font-weight: 600;
+
+}

@@ -2,29 +2,31 @@ import React from 'react'
 import "./styles.css"
 import TemporaryDrawer from "./Drawer";
 import Button from "../Button/Button";
-
+import ShowChartRoundedIcon from '@mui/icons-material/ShowChartRounded';
+import  {Link} from "react-router-dom";
 
 
 function Header() {
   return (
     <div id="header">
-        <h1 className='logo'>Crypto Tracker <span style={{color:"tomato"}}>.</span></h1>
+      <h1 className='logo'>Crypto Tracker <span id="dot"style={{color: "#39FF14", fontSize: "1rem"}}><ShowChartRoundedIcon /></span></h1>
+
         <div className='links'>
-          <a href='/'>
+          <Link to='/'>
             <p className='link'>Home</p>
-          </a>
-          <a href='/'>
+          </Link>
+          <Link to='/comparepage'>
             <p className='link'>Compare</p>
-          </a>
-          <a href='/'>
+          </Link>
+          <Link to='/watchlist"'>
             <p className='link'>Watchlist</p>
-          </a>
-          <a href='/'>
+          </Link>
+          <Link to ='/dashboard'>
            <Button text ={"Dashboard"}
             onClick={()=>{console.log("hello")}}
            
            />
-          </a>
+          </Link>
           
         </div>
         <div className='mobile-drawer'><TemporaryDrawer/></div>

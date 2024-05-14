@@ -7,6 +7,8 @@
   --quaternary: #176B87;
   --color-quinary: #c0b1a0;
   --blue: rgb(106, 131, 255);
+  --text:#012e3d;
+  --dark:#121212;
 }
 
 body {
@@ -53,3 +55,5 @@ code {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--blue);
 }
+
+

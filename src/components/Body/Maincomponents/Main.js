@@ -8,19 +8,21 @@ function main() {
   return (
     <div className='flex-info'>
         <div className='left-component'>
+
             <motion.h1 className='track-crypto-heading' 
             initial={{x:500}} 
             animate={{x:0}} 
             transition={{ type:"smooth", duration:0.6}}>
                 Track Crypto
                 </motion.h1>
+
             <motion.h1 className='real-time-heading' initial={{x:-200}} 
             animate={{x:0}} 
             transition={{type:"smooth", duration:0.6}}>Real Time.</motion.h1>
             <motion.p className='left-p'
             initial={{y:1000}} 
             animate={{y:0}} 
-            transition={{type:"smooth", duration:0.8}}>Track crypto through a public api in real time.Visit the dashboard 
+            transition={{type:"smooth", duration:0.9}}>Track crypto through a public api in real time.Visit the dashboard 
             to do so!
             </motion.p>
             <motion.div className='btn-flex'

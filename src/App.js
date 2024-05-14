@@ -1,16 +1,26 @@
+import {BrowserRouter,Route,Routes} from "react-router-dom"
 import "./App.css";
-import Header from "./components/Common/Header/Header";
-import Footer from "./components/Common/Footer/Footer";
-import Main from "./components/Body/Maincomponents/Main";
-import Loader from "./components/Common/Loader/Loader";
-import { useState } from "react";
 
+import Home from "./pages/Home/Home";
+import Coinpage from "./pages/Coinpage/Coinpage";
+import ComparePage from "./pages/ComparePage/ComparePage";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Watchlist from "./pages/WatchlistPage/Watchlist";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main/>
-      <Footer />
+      <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/coinpage" element={<Coinpage/>}/>
+      <Route path="/comparepage" element={<ComparePage/>}/>
+      <Route path="/dashboard" element={<Dashboard/>}/>
+      <Route path="/watchlist" element={<Watchlist/>}/>
+      
+      </Routes>
+      </BrowserRouter>
+     
+     
     </div>
   );
 }
